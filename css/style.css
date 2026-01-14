@@ -152,6 +152,23 @@ main > section{
     margin-bottom: 130px;
 }
 
+/* sponspore related style */
+.sponspors-info{
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.company{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.company img{
+    filter: grayscale(100%);
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
     .navbar,
@@ -159,8 +176,16 @@ main > section{
     .teams {
         flex-direction: column;
     }
-    .team-image-container{
+    .team-image-container, 
+    .facts-container,
+    .company
+    {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .facts-container, .company{
+        justify-items: center;
+        gap: 24px;
     }
    .our-features{
     margin-left: 20px;
@@ -171,5 +196,14 @@ main > section{
 @media screen and (min-width: 576px) and (max-width: 992px){
     .teams{
         flex-direction: column;
+    }
+
+    .facts-container, .company{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .facts-container, .company{
+        justify-items: center;
+        gap: 24px;
     }
 }
