@@ -208,6 +208,22 @@ main > section{
     filter: grayscale(100%);
 }
 
+/* footer section style */
+
+footer{
+    margin-top: 130px;
+    margin-bottom: 216px;
+}
+.footer-title{
+    
+    background-color: #FFF4E7;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 38px;
+    text-align: center;
+    
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
     .navbar,
